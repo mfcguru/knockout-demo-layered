@@ -72,7 +72,7 @@
                 axios.post('api/csv/upload', formData, {
                     headers: { 'Content-Type': 'multipart/form-data' }
                 }).then(() => {
-                    self.message('Sucess!')
+                    self.message('Success!')
                     self.showSuccess(true)
                 }).catch((error) => {
                     self.message(error.response.data)
