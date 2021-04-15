@@ -8,5 +8,6 @@ namespace KnockoutDemo.Business.Services.Report
     public interface IReportService
     {
         Task<List<ReportServiceResultDto>> GetAllUsers();
+        Task DeleteAllUsers();
     }
 }

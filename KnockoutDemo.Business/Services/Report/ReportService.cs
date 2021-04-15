@@ -26,5 +26,12 @@ namespace KnockoutDemo.Business.Services.Report
 
             return result;
         }
+
+        public async Task DeleteAllUsers()
+        {
+            context.Users.RemoveRange(context.Users);
+
+            await context.SaveChangesAsync();
+        }
     }
 }

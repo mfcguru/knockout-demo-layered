@@ -44,5 +44,13 @@ namespace KnockoutDemo.Application.Controllers
 
             return Ok(result);
         }
+
+        [HttpDelete("report")]
+        public async Task<ActionResult> DeleteAllUsers()
+        {
+            await reportService.DeleteAllUsers();
+
+            return Ok();
+        }
     }
 }
